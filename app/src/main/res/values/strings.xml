@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ParkAid</string>
+    <string name="navigation_drawer_open"/>
+    <string name="navigation_drawer_close"/>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="item_1">Parken</string>
+    <string name="button">Parken</string>
+    <string name="textview">Ebene:</string>
+    <string name="art_des_parkens">Art des Parkens</string>
+    <string name="radiobutton1">Parkhaus</string>
+    <string name="radiobutton2">Parkplatz</string>
+    <string name="Speichern">Speichern</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Logo">Logo</string>
+    <string name="parkplatz">Parkplatz</string>
+    <string name="parkhaus">Parkhaus</string>
+    <string name="default_notification_pref">false</string>
+    <string name="default_handicapped_pref">false</string>
+    <string name="default_womens_pref">false</string>
+    <string name="name">NAME</string>
+    <string name="ebene">Ebene</string>
+    <string name="nummer">Nummer</string>
+    <string name="preis">Preis</string>
+    <string name="schlie_zeit">Schließzeit</string>
+    <string name="speichern">Speichern</string>
+    <string name="name_optional">Name (optional)</string>
+    <string name="preis_stunde">Preis/Stunde</string>
+    <string name="name1">Name:</string>
+    <string name="adresse">Adresse:</string>
+    <string name="distanz">Distanz:</string>
+
+    <string name="behindertengerecht">Behindertengerecht</string>
+    <string name="frauenparkplatz">Frauenparkplatz</string>
+    <string name="preis1">Preis:</string>
+    <string name="ebene1">Ebene:</string>
+    <string name="nummer1">Nummer:</string>
+
+
+
+</resources>

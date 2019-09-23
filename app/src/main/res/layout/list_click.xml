@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parkScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ListClick" android:background="#161616">
+    <fragment
+            android:id="@+id/mapListClick"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="288dp"
+            android:layout_height="230dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintTop_toBottomOf="@+id/parkhausBild">
+    </fragment>
+    <TextView
+            android:id="@+id/name"
+            android:text="@string/name1"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:visibility="visible"
+            android:textColor="#1B1919"
+            android:textColorLink="#00BCD4"
+            android:textSize="29sp" android:background="#3BC7B5"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"/>
+    <LinearLayout android:id="@+id/unten" app:layout_constraintBottom_toBottomOf="parent"
+                  android:layout_width="wrap_content" android:layout_height="68dp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/parkenButton">
+        <TextView
+                android:id="@+id/strasse"
+                android:text="Straße:"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+
+                android:visibility="visible"
+                android:textColor="#1B1919"
+                android:textColorLink="#00BCD4"
+                android:background="#2BC99C"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteY="647dp" tools:layout_editor_absoluteX="-11dp"
+                android:textAlignment="center"/>
+        <TextView
+                android:id="@+id/ort"
+                android:text="Ort:"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+
+                android:visibility="visible"
+                android:textColor="#1B1919"
+                android:textColorLink="#00BCD4"
+                android:background="#009688"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteY="647dp" tools:layout_editor_absoluteX="-11dp" android:layout_weight="1"
+                android:textAlignment="center"/>
+        <TextView
+                android:id="@+id/distanz"
+                android:text="@string/distanz"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+
+                android:visibility="visible"
+                android:textColor="#1B1919"
+                android:textColorLink="#00BCD4"
+                android:background="#2BC99C"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteY="647dp" tools:layout_editor_absoluteX="-11dp"
+                android:textAlignment="center"/>
+
+        <TextView
+                android:id="@+id/endzeitph"
+                android:text="@string/schlie_zeit"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+
+                android:visibility="visible"
+                android:textColor="#1B1919"
+                android:textColorLink="#00BCD4"
+                android:background="#009688"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteY="702dp" tools:layout_editor_absoluteX="265dp"
+                android:textAlignment="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/linearLayout"
+                  app:layout_constraintTop_toBottomOf="@+id/name"
+    >
+
+        <TextView
+                android:id="@+id/filter2"
+                android:text="@string/frauenparkplatz"
+                android:layout_width="133dp"
+                android:layout_height="35dp"
+                android:gravity="center_vertical" android:textSize="16sp" android:background="#8FDAD6"
+
+                tools:layout_editor_absoluteY="611dp" tools:layout_editor_absoluteX="55dp"/>
+        <TextView
+                android:id="@+id/filter1"
+                android:text="@string/behindertengerecht"
+                android:layout_width="164dp"
+                android:layout_height="35dp"
+                android:gravity="center_vertical" android:textSize="16sp" android:background="#8FDAD6"
+
+                tools:layout_editor_absoluteY="611dp" tools:layout_editor_absoluteX="55dp"/>
+        <TextView
+                android:id="@+id/preis"
+                android:text="@string/preis1"
+                android:layout_width="133dp"
+                android:layout_height="35dp"
+                android:gravity="center_vertical" android:textSize="16sp" android:background="#8FDAD6"
+
+                tools:layout_editor_absoluteY="611dp" tools:layout_editor_absoluteX="55dp"/>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="288dp"
+            android:layout_height="190dp" tools:src="@tools:sample/avatars"
+            android:id="@+id/parkhausBild"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/mapListClick" app:layout_constraintHorizontal_bias="0.495"
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+    <Button
+            android:text="Parken"
+            android:layout_width="174dp"
+            android:layout_height="54dp"
+            android:id="@+id/parkenButton" android:layout_marginEnd="119dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="118dp"
+            android:layout_marginBottom="13dp" app:layout_constraintBottom_toTopOf="@+id/unten"
+            android:layout_marginTop="13dp" app:layout_constraintTop_toBottomOf="@+id/mapListClick"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

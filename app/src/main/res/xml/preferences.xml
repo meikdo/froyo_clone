@@ -1,0 +1,26 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+            android:defaultValue="@string/default_notification_pref"
+            android:key="notifications"
+            android:title="Benachrichtigungen aktivieren"/>
+
+    <CheckBoxPreference
+            android:defaultValue="@string/default_handicapped_pref"
+            android:key="handicapped"
+            android:title="Behindertengerechtes Parken"/>
+    <CheckBoxPreference
+            android:defaultValue="@string/default_womens_pref"
+            android:key="womens"
+            android:title="Frauenparkplatz"/>
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="elektro"
+            android:title="Elektrofahrzeug"/>
+    <Preference
+        android:key="feedback"
+        android:title="Send feedback"
+        android:summary="Bericht über technische Probleme/Vorschlag für neue Features"/>
+
+</PreferenceScreen>
