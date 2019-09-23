@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainScreenFragment" android:background="#161616">
+
+
+    <fragment
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="5dp"
+
+            android:layout_marginBottom="20dp"
+
+            tools:context=".MainActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            map:uiCompass="true"
+            map:mapType="normal"
+            map:uiRotateGestures="true"
+            map:uiScrollGestures="true"
+            map:uiTiltGestures="true"
+            map:uiZoomControls="true"
+            map:uiZoomGestures="true" map:layout_constraintBottom_toTopOf="@+id/linearLayout2">
+    </fragment>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="165dp"
+            android:layout_height="27dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="246dp"
+            app:layout_constraintBottom_toTopOf="@+id/parkhaus_liste_Main"
+            android:id="@+id/linearLayout2" android:background="#21917E"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="8dp">
+        <TextView
+                android:text="Entfernung"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" android:textAlignment="center" android:textColor="#0E0D0D"/>
+        <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/switchMain"
+                android:textColorLink="#005E0707" android:shadowColor="#00201F1F"
+                android:textColorHighlight="#3BC7B5"/>
+        <TextView
+                android:text="Preis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" android:textColor="#0E0D0D"/>
+    </LinearLayout>
+    <ListView
+            android:background="@color/design_default_color_background"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/parkhaus_liste_Main"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="4dp" app:layout_constraintHorizontal_bias="0.0">
+    </ListView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
