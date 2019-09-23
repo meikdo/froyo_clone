@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/list_itemx"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:background="#D8242424">
+        <TextView
+                android:id="@+id/name_list"
+                android:text="NAME"
+                android:layout_width="240dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textColor="#1B1919"
+                android:textColorLink="#00BCD4"
+                android:textSize="32sp" android:background="#3BC7B5"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="35dp" app:layout_constraintEnd_toStartOf="@+id/preis_list"
+                app:layout_constraintBottom_toTopOf="@+id/adress_list" android:layout_marginTop="4dp"/>
+        <TextView
+                android:id="@+id/preis_list"
+                android:text="PREIS"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:textSize="29sp"
+                android:textAlignment="center"
+                android:background="#8FDAD6"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="20dp" app:layout_constraintStart_toEndOf="@+id/name_list"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"/>
+    <TextView
+            android:id="@+id/adress_list"
+            android:text="STRAßE"
+            android:layout_width="225dp"
+            android:layout_height="25dp"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textColor="#1B1919"
+            android:textColorLink="#00BCD4"
+            android:background="#009688"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ort_list"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="4dp"/>
+    <TextView
+            android:text="12345, Ort"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" android:id="@+id/ort_list"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent" android:background="#009688"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/name_list" app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintEnd_toStartOf="@+id/distance_list" android:layout_marginEnd="7dp"/>
+    <TextView
+            android:id="@+id/distance_list"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textColor="#F44336"
+            android:textColorLink="#00BCD4"
+            android:background="#256D63"
+            android:text="METER"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="4dp"
+    />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
